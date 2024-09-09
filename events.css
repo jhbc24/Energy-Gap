@@ -1,0 +1,148 @@
+/* Events Section Styling */
+section#events {
+    width: 100%;
+    padding: 50px;
+    background: #f9f9f9; /* Light background for better readability */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+section#events .title {
+    text-align: center;
+    font-size: 3em; /* Responsive font size */
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+section#events .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+section#events .col {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures image does not overflow the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#events .col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+section#events img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+section#events .col:hover img {
+    transform: scale(1.05);
+}
+
+section#events h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* Responsive font size */
+    color: #333;
+    margin: 15px 0;
+    text-align: center;
+}
+
+section#events h4 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section#events h4 a:hover {
+    color: #f2d27b;
+}
+
+section#events .eventDescription {
+    font-size: 1em; /* Responsive font size */
+    color: #666;
+    margin-top: 10px;
+    text-align: left;
+}
+
+section#events .more-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #f2d27b;
+    border: 2px solid #d7b553;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+section#events .more-btn:hover {
+    background-color: #d9a63b;
+    border-color: #c8a63b;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 850px) {
+    section#events .col {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    section#events .title {
+        font-size: 2.5em;
+    }
+
+    section#events h4 {
+        font-size: 1.4em;
+    }
+
+    section#events .eventDescription {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section#events .col {
+        flex: 1 1 100%;
+    }
+
+    section#events .title {
+        font-size: 2em;
+    }
+
+    section#events h4 {
+        font-size: 1.2em;
+    }
+
+    section#events .eventDescription {
+        font-size: 0.8em;
+    }
+
+    section#events .more-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+        position: static;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}

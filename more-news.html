@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css"> <!-- Separate CSS file for the articles section -->
+</head>
+<body>
+    <header>
+        <nav class="header-content">
+            <div class="renewable-horizons-logo">
+                <a class="home-link" href="index.html">
+                    <img src="resources/logo/renewable-horizons-white.png" alt="Renewable Horizons Logo">
+                </a>
+                <a class="home-link-text" href="index.html">
+                    <span class="logo-text">Renewable Horizons</span>
+                </a>
+            </div>
+            <div class="home-about-contact-links">
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <img src="./resources/icons/hamburger-menu.png" alt="Menu Button" class="menu-btn">
+            </div>
+        </nav>
+    </header>
+ 
+    <section id="news" class="news">
+        <div class="title">
+            <h2>News</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="news-item">
+                    <img src="./resources/news1.jpg" alt="Actis Partners with Meralco on Philippine Renewables Project">
+                    <p class="date">September 06, 2024</p>
+                    <h4><a href="https://realassets.ipe.com/news/actis-partners-with-meralco-on-philippine-renewables-project/10075501.article">Actis Partners with Meralco on Philippine Renewables Project</a></h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="news-item">
+                    <img src="./resources/news2.jpg" alt="Actis to Join 3.5 GWp Philippine Solar-Plus-Storage Project">
+                    <p class="date">September 06, 2024</p>
+                    <h4><a href="https://renewablesnow.com/news/actis-to-join-35-gwp-philippine-solar-plus-storage-project-868087/">Actis to Join 3.5 GWp Philippine Solar-Plus-Storage Project</a></h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="news-item">
+                    <img src="./resources/news3.jpg" alt="Philippine Government Announces New Renewable Energy Initiatives">
+                    <p class="date">June 14, 2024</p>
+                    <h4><a href="https://www.pna.gov.ph/articles/1226963">Philippine Government Announces New Renewable Energy Initiatives</a></h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="news-item">
+                    <img src="./resources/news4.jpg" alt="Philippines to Launch Tender for Renewables and Energy Storage">
+                    <p class="date">July 09, 2024</p>
+                    <h4><a href="https://www.energy-storage.news/philippines-to-launch-tender-for-renewables-and-energy-storage-before-end-of-this-year/">Philippines to Launch Tender for Renewables and Energy Storage Before End of This Year</a></h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="news-item">
+                    <img src="./resources/news5.jpg" alt="DTI Welcomes Investment Boost, Marubeni Eyes Renewable Energy Push in Philippines">
+                    <p class="date">September 21, 2024</p>
+                    <h4><a href="https://www.dti.gov.ph/archives/news-archives/dti-welcomes-investment-boost-marubeni-eyes-renewable-energy-push-philippines/">DTI Welcomes Investment Boost, Marubeni Eyes Renewable Energy Push in Philippines</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+            const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu');
+});
+    </script>
+</body>
+</html>

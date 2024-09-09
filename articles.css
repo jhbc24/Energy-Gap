@@ -1,0 +1,139 @@
+/* Articles Section */
+section#article {
+    width: 100vw;
+    margin: 0;
+    padding: 50px;
+    background: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.excerpt {
+    font-size: 1.8vmin;
+    color: #555;
+    margin: 10px 0;
+}
+
+.tag {
+    font-size: 1.6vmin;
+    color: #fff;
+    background-color: #647B61;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.date {
+    font-size: 1.6vmin;
+    color: #999;
+}
+
+.col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.col img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.col:hover img {
+    transform: scale(1.05);
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8vmin;
+    color: #333;
+    margin: 15px 0;
+    text-align: center;
+}
+
+h4 a {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+h4 a:hover {
+    color: #f2d27b;
+}
+
+.more-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1.6vmin;
+    color: #333;
+    background-color: #f2d27b;
+    border: 2px solid #d7b553;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.more-btn:hover {
+    background-color: #d9a63b;
+    border-color: #c8a63b;
+}
+
+/* Responsive Design Adjustments */
+@media only screen and (max-width: 850px) {
+    .col {
+        flex: 1 1 calc(50% - 20px); /* Display 2 items per row on medium screens */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .col {
+        flex: 1 1 100%; /* Display 1 item per row on small screens */
+    }
+
+    .more-btn {
+        font-size: 3vmin;
+        padding: 12px 20px;
+        position: static;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}

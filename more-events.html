@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css"> <!-- Separate CSS file for the articles section -->
+</head>
+<body>
+    <header>
+        <nav class="header-content">
+            <div class="renewable-horizons-logo">
+                <a class="home-link" href="index.html">
+                    <img src="resources/logo/renewable-horizons-white.png" alt="Renewable Horizons Logo">
+                </a>
+                <a class="home-link-text" href="index.html">
+                    <span class="logo-text">Renewable Horizons</span>
+                </a>
+            </div>
+            <div class="home-about-contact-links">
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <img src="./resources/icons/hamburger-menu.png" alt="Menu Button" class="menu-btn">
+            </div>
+        </nav>
+    </header>
+    <section id="events" class="events">
+        <div class="title">
+            <h2>Events</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./resources/event1.png" alt="Phil Energy Expo">
+                <div class="text">
+                    <h4><a href="https://www.philenergyexpo.com/">Phil Energy Expo</a></h4>
+                    <p class="eventDescription">Explore the latest innovations and developments in the energy sector at the Phil Energy Expo.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./resources/event2.png" alt="Energy Tech Philippines 2024">
+                <div class="text">
+                    <h4><a href="https://energytech.events/philippines2024">Energy Tech Philippines 2024</a></h4>
+                    <p class="eventDescription">Join industry leaders and innovators at Energy Tech Philippines 2024 to explore cutting-edge technologies and advancements in the energy sector.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./resources/event3.png" alt="PRES 2023">
+                <div class="text">
+                    <h4><a href="https://www.neoventurecorp.com/pres-2023/">PRES 2023</a></h4>
+                    <p class="eventDescription">Discover the latest trends and technologies at PRES 2023, hosted by NeoVenture Corporation.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./resources/event4.png" alt="Solar & Storage Live Philippines">
+                <div class="text">
+                    <h4><a href="https://www.terrapinn.com/exhibition/solar-storage-live-philippines/index.stm">Solar & Storage Live Philippines</a></h4>
+                    <p class="eventDescription">Join the leading event on solar and storage technologies in the Philippines to connect with industry experts and discover the latest innovations.</p>
+                </div>
+            </div>
+
+            
+        </div>
+  
+    </section>
+    <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu');
+});
+</script>
+</body>
+</html>
